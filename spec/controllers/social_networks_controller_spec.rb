@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe SocialNetworksController, type: :controller do
 
-  let(:tweets) { ["some tweets"] }
-  let(:statuses) { ["some statuses"] }
-  let(:photos) { ["some pictures"] }
-  let(:res) { { "twitter" => tweets, "facebook" => statuses, "instagram" => photos } }
+  let(:tweets) { ['some tweets'] }
+  let(:statuses) { ['some statuses'] }
+  let(:photos) { ['some pictures'] }
+  let(:res) { { 'twitter' => tweets, 'facebook' => statuses, 'instagram' => photos } }
 
   it 'should return valid response api success' do
     expect(GetSocialNetworkData).to receive(:call).and_return([tweets, statuses, photos])
