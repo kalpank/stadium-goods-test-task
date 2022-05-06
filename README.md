@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  Ruby Version: 2.7.0
 
-Things you may want to cover:
+  Rails Version: 7.0.2
 
-* Ruby version
+## Setup
 
-* System dependencies
+  Install `ruby 2.7.0`
 
-* Configuration
+  To install dependencies run command `bundle install`
 
-* Database creation
+## Run application
 
-* Database initialization
+  To run application run command `rails s`
 
-* How to run the test suite
+  To check output run command `curl localhost:3000`
+## Test
 
-* Services (job queues, cache servers, search engines, etc.)
+  To run test cases run command `bundle exec rspec`
 
-* Deployment instructions
+## Details
 
-* ...
+  API fetches data from  https://takehome.io/ site and parse it and gives the response.
+
+  We have three social media platforms `facebook`, `twitter` and `instagram`.
+
+  All have unpredictable outputs, success case respond with json data and error case response with a error string.
+
+  In case of success we return the parsed output required. and for the error case we return empty array.
